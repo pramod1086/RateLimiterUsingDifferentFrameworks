@@ -6,12 +6,14 @@ import io.github.bucket4j.Bucket;
 import io.github.bucket4j.Bucket4j;
 import io.github.bucket4j.Refill;
 import org.apache.catalina.util.RateLimiter;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.time.Duration;
 
 @Configuration
+@Qualifier("RateLimitConfigBucketJar")
 public class RateLimitConfig {
 
     @Bean

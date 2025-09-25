@@ -1,11 +1,10 @@
-package com.pramod.ratelimiterusingredis;
+package com.pramod;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.pramod")
 public class RateLimiterUsingRedisApplication {
 
 	public static void main(String[] args) {

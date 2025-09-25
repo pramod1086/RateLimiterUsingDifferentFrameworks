@@ -1,10 +1,16 @@
 package com.pramod.ratelimiterusingredis.Controller;
 
-public class Bucket {
+import lombok.Data;
+
+import java.io.Serializable;
+
+@Data
+
+public class Bucket  implements Serializable {
 
 
     /** a unique byte string that identifies the bucket   */
-    private int key;
+    private String key;
 
     /**the maximum number of tokens the bucket can hold*/
     private int maxAmount;
@@ -19,7 +25,7 @@ public class Bucket {
     private int value;
 
     /**  the last time the bucket was updated       */
-    private int lastUpdate;
+    private long lastUpdate;
 
 
 
